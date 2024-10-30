@@ -1,0 +1,46 @@
+{
+	"apiVersion": 2,
+	"title": "Syndication",
+	"description": "Display syndication links.",
+	"name": "indieblocks/syndication",
+	"category": "theme",
+	"icon": "admin-links",
+	"editorScript": "file:./block.js",
+	"render": "file:./render.php",
+	"usesContext": [ "postId", "postType" ],
+	"attributes": {
+		"prefix": {
+			"type": "string",
+			"default": ""
+		},
+		"suffix": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"textdomain": "indieblocks",
+	"supports": {
+		"color": {
+			"gradients": true,
+			"link": true,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true,
+				"link": true
+			}
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontWeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalTextTransform": true,
+			"__experimentalTextDecoration": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		}
+	}
+}

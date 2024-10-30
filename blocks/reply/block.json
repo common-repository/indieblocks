@@ -1,0 +1,51 @@
+{
+	"apiVersion": 2,
+	"title": "Reply",
+	"description": "Reply to others’ (or your own) posts and pages.",
+	"name": "indieblocks/reply",
+	"category": "text",
+	"icon": "admin-comments",
+	"editorScript": "file:./block.js",
+	"style": "file:./block.css",
+	"attributes": {
+		"url": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".u-url",
+			"attribute": "href",
+			"default": ""
+		},
+		"customTitle": {
+			"type": "boolean",
+			"default": false
+		},
+		"title": {
+			"type": "string",
+			"source": "text",
+			"selector": ".u-url",
+			"default": ""
+		},
+		"customAuthor": {
+			"type": "boolean",
+			"default": false
+		},
+		"author": {
+			"type": "string",
+			"source": "text",
+			"selector": ".p-author",
+			"default": ""
+		},
+		"empty": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"example": {
+		"attributes": {
+			"url": "https://example.org/",
+			"title": "Example Domain",
+			"author": "Alice"
+		}
+	},
+	"textdomain": "indieblocks"
+}

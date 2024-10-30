@@ -1,0 +1,40 @@
+{
+	"apiVersion": 2,
+	"title": "Facepile",
+	"description": "Contains the blocks to display Webmention “likes,” “reposts,” etc. as a so-called facepile.",
+	"name": "indieblocks/facepile",
+	"category": "theme",
+	"editorScript": "file:./block.js",
+	"render": "file:./render.php",
+	"usesContext": [ "postId", "postType" ],
+	"textdomain": "indieblocks",
+	"supports": {
+		"color": {
+			"gradients": true,
+			"link": true,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true,
+				"link": true
+			}
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontFamily": true,
+			"__experimentalFontWeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalTextTransform": true,
+			"__experimentalTextDecoration": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		},
+		"spacing": {
+			"margin": ["top", "bottom"],
+			"padding": false,
+			"blockGap": false
+		}
+	}
+}

@@ -1,0 +1,58 @@
+{
+	"apiVersion": 2,
+	"title": "Facepile Content",
+	"description": "Outputs the actual “facepile” avatars.",
+	"name": "indieblocks/facepile-content",
+	"category": "theme",
+	"editorScript": "file:./block.js",
+	"style": "file:./block.css",
+	"render": "file:./render.php",
+	"attributes": {
+		"avatarSize": {
+			"type": "integer",
+			"default": 2
+		},
+		"backgroundColor": {
+			"type": "string",
+			"default": "transparent"
+		},
+		"icons": {
+			"type": "boolean",
+			"default": true
+		},
+		"color": {
+			"type": "string",
+			"default": "#000"
+		},
+		"iconBackgroundColor": {
+			"type": "string",
+			"default": "#fff"
+		},
+		"type": {
+			"type": "array",
+			"default": [ "bookmark", "like", "repost" ]
+		},
+		"countOnly": {
+			"type": "boolean",
+			"default": false
+		},
+		"forceShow": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"usesContext": [ "postId", "postType" ],
+	"textdomain": "indieblocks",
+	"supports": {
+		"color": {
+			"gradients": true,
+			"link": true,
+			"__experimentalDefaultControls": {
+				"background": true,
+				"text": true,
+				"link": true
+			}
+		},
+		"inserter": false
+	}
+}

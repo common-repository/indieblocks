@@ -1,0 +1,50 @@
+{
+	"apiVersion": 2,
+	"title": "Bookmark",
+	"description": "Bookmark and annotate web pages or posts.",
+	"name": "indieblocks/bookmark",
+	"category": "text",
+	"editorScript": "file:./block.js",
+	"style": "file:./block.css",
+	"attributes": {
+		"url": {
+			"type": "string",
+			"source": "attribute",
+			"selector": ".u-url",
+			"attribute": "href",
+			"default": ""
+		},
+		"customTitle": {
+			"type": "boolean",
+			"default": false
+		},
+		"title": {
+			"type": "string",
+			"source": "text",
+			"selector": ".p-name",
+			"default": ""
+		},
+		"customAuthor": {
+			"type": "boolean",
+			"default": false
+		},
+		"author": {
+			"type": "string",
+			"source": "text",
+			"selector": ".p-author",
+			"default": ""
+		},
+		"empty": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"example": {
+		"attributes": {
+			"url": "https://example.org/",
+			"title": "Example Domain",
+			"author": "Alice"
+		}
+	},
+	"textdomain": "indieblocks"
+}
